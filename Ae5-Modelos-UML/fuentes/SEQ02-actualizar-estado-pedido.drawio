@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="a1nsSTRfHCcyZRUreoPm">
+    <mxGraphModel dx="1717" dy="892" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JuNbIzms-I3LHblHPMKP-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cocinero&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="558.75" width="20" x="43" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;spacingLeft=15;" value="Pantalla&lt;div&gt;Cocina&lt;/div&gt;" vertex="1">
+          <mxGeometry height="558.75" width="75" x="235" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-3" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;spacingTop=3;" value="Control&lt;div&gt;Pedido&lt;/div&gt;" vertex="1">
+          <mxGeometry height="558.75" width="85" x="474" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-4" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" value="Pedido" vertex="1">
+          <mxGeometry height="558.75" width="58" x="735" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;spacingLeft=15;" value="Pantalla&lt;div&gt;Venta&lt;/div&gt;" vertex="1">
+          <mxGeometry height="562.75" width="75" x="942" y="47" as="geometry" />
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-6" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-2" value="1: marcarListo(numeroOrden)">
+          <mxGeometry relative="1" width="80" x="-0.2495" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="54" y="122.75" as="sourcePoint" />
+            <mxPoint x="186" y="122.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-7" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-3" value="2: marcarListo(numeroOrden)">
+          <mxGeometry relative="1" width="80" x="-0.2495" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="272" y="161.75" as="sourcePoint" />
+            <mxPoint x="490" y="161.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-8" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-4" value="3: cambiarEstado(&quot;listo&quot;)">
+          <mxGeometry relative="1" width="80" x="-0.427" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="517" y="189.75" as="sourcePoint" />
+            <mxPoint x="761" y="189.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-9" edge="1" parent="1" source="JuNbIzms-I3LHblHPMKP-4" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="estadoActualizado">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="761.5999999999999" y="219.75" as="sourcePoint" />
+            <mxPoint x="516.5" y="219.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-10" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-5" value="4: notificarPedidoListo(numeroOrden)">
+          <mxGeometry relative="1" width="80" x="-0.5864" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="519.2" y="256.75" as="sourcePoint" />
+            <mxPoint x="760" y="256.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-11" edge="1" parent="1" source="JuNbIzms-I3LHblHPMKP-2" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;" value="5: mostrarEstado(&quot;listo&quot;)">
+          <mxGeometry relative="1" width="80" x="-0.3576" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="431.05999999999995" y="290.22" />
+            </Array>
+            <mxPoint x="338" y="289.75" as="sourcePoint" />
+            <mxPoint x="514.47" y="289.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-12" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=144;height=28;" value="opt [cambio por error]" vertex="1">
+          <mxGeometry height="246" width="987" x="23" y="323.75" as="geometry" />
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-13" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" value="6: deshacerCambio(numeroOrden)">
+          <mxGeometry relative="1" width="80" x="-0.1765" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="54" y="385.75" as="sourcePoint" />
+            <mxPoint x="272.5899999999999" y="385.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-14" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-3" value="7: deshacerCambio(numeroOrden)">
+          <mxGeometry relative="1" width="80" x="-0.1765" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="273" y="418.75" as="sourcePoint" />
+            <mxPoint x="491.5899999999999" y="418.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" value="8: revertirEstado()">
+          <mxGeometry relative="1" width="80" x="-0.5774" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="517" y="446.75" as="sourcePoint" />
+            <mxPoint x="764.6700000000001" y="446.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-16" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="estadoAnterior">
+          <mxGeometry relative="1" x="0.2539" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="764.5" y="473.9200000000001" as="sourcePoint" />
+            <mxPoint x="517" y="473.9200000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-17" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-5" value="9: anularNotificacion(numeroOrden)">
+          <mxGeometry relative="1" width="80" x="-0.5774" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="517" y="508.75" as="sourcePoint" />
+            <mxPoint x="764.6700000000001" y="508.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JuNbIzms-I3LHblHPMKP-18" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;" value="10: mostrarEstado(estadoAnterior)">
+          <mxGeometry relative="1" width="80" x="-0.2212" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="433.05999999999995" y="543.22" />
+            </Array>
+            <mxPoint x="272" y="542.75" as="sourcePoint" />
+            <mxPoint x="516.47" y="542.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
