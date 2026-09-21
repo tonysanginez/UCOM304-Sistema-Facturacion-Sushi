@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="nfXk1C2CUuwwQOLlkb_w">
-    <mxGraphModel dx="1471" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="858" dy="446" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -56,7 +56,7 @@
         <mxCell id="Ug1Tb_VfJ3Fhk8jnEAUK-12" parent="Ug1Tb_VfJ3Fhk8jnEAUK-10" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="243" y="184" as="geometry" />
         </mxCell>
-        <mxCell id="Ug1Tb_VfJ3Fhk8jnEAUK-13" parent="Ug1Tb_VfJ3Fhk8jnEAUK-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarVenta(): void&lt;br&gt;+ agregarDetalle(producto: Producto, cantidad: int): void&amp;nbsp;&lt;br&gt;+ generarPedido(): Pedido&amp;nbsp;&lt;br&gt;+ registrarPago(formaPago: String, monto: double): void&amp;nbsp;&lt;br&gt;+ calcularTotal(): double&lt;br&gt;+ calcularVuelto(): double" vertex="1">
+        <mxCell id="Ug1Tb_VfJ3Fhk8jnEAUK-13" parent="Ug1Tb_VfJ3Fhk8jnEAUK-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ registrarVenta(): void&lt;br&gt;+ agregarDetalle(producto: Producto, cantidad: int): void&amp;nbsp;&lt;br&gt;+ generarPedido(): int&amp;nbsp;&lt;br&gt;+ registrarPago(formaPago: String, monto: double): void&amp;nbsp;&lt;br&gt;+ calcularTotal(): double&lt;br&gt;+ calcularVuelto(): double" vertex="1">
           <mxGeometry height="125" width="243" y="192" as="geometry" />
         </mxCell>
         <mxCell id="Ug1Tb_VfJ3Fhk8jnEAUK-14" edge="1" parent="1" source="Ug1Tb_VfJ3Fhk8jnEAUK-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;fontSize=19;fontStyle=1" target="Ug1Tb_VfJ3Fhk8jnEAUK-21">

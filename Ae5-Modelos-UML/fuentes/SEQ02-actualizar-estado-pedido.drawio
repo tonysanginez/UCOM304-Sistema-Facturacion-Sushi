@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="a1nsSTRfHCcyZRUreoPm">
-    <mxGraphModel dx="858" dy="446" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1471" dy="764" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -38,12 +38,6 @@
             <mxPoint as="offset" />
             <mxPoint x="517" y="189.75" as="sourcePoint" />
             <mxPoint x="761" y="189.75" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JuNbIzms-I3LHblHPMKP-9" edge="1" parent="1" source="JuNbIzms-I3LHblHPMKP-4" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="estadoActualizado">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="761.5999999999999" y="219.75" as="sourcePoint" />
-            <mxPoint x="516.5" y="219.8" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="JuNbIzms-I3LHblHPMKP-10" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-5" value="4: notificarPedidoListo(numeroOrden)">
