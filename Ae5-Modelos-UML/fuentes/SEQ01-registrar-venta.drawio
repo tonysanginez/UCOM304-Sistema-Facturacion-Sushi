@@ -1,14 +1,14 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="ho1YTBR-DtUasYMG3FkY">
-    <mxGraphModel dx="2060" dy="1070" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="589" dy="306" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="CLIAiuOKjOtazseOK25a-1" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlActor;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cajero&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="1019" width="20" x="76" y="96" as="geometry" />
+          <mxGeometry height="1059" width="20" x="76" y="96" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-2" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlBoundary;align=center;labelPosition=center;verticalLabelPosition=middle;verticalAlign=middle;spacingLeft=15;" value="Pantalla&lt;div&gt;Venta&lt;/div&gt;" vertex="1">
-          <mxGeometry height="1019" width="75" x="181" y="96" as="geometry" />
+          <mxGeometry height="1059" width="75" x="181" y="96" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-3" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="CLIAiuOKjOtazseOK25a-2" value="1: iniciarVenta()">
           <mxGeometry relative="1" width="80" as="geometry">
@@ -23,7 +23,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-5" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" value="Venta" vertex="1">
-          <mxGeometry height="926" width="40" x="502" y="189" as="geometry" />
+          <mxGeometry height="952" width="40" x="502" y="189" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-6" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-25" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="3:&amp;nbsp;&lt;span style=&quot;color: rgb(59, 64, 69); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI Adjusted&amp;quot;, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Liberation Sans&amp;quot;, sans-serif; font-size: 13px; white-space: normal;&quot;&gt;«&lt;/span&gt;create&lt;span style=&quot;color: rgb(59, 64, 69); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI Adjusted&amp;quot;, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Liberation Sans&amp;quot;, sans-serif; font-size: 13px; white-space: normal;&quot;&gt;»&lt;/span&gt;">
           <mxGeometry relative="1" width="80" x="0.0105" as="geometry">
@@ -33,10 +33,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-7" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=154;height=29;" value="loop [por cada producto]" vertex="1">
-          <mxGeometry height="445" width="681" x="72" y="265" as="geometry" />
+          <mxGeometry height="445" width="775" x="72" y="265" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-8" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" value="Producto" vertex="1">
-          <mxGeometry height="1019" width="58" x="701" y="98" as="geometry" />
+          <mxGeometry height="1047" width="58" x="701" y="98" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-9" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;spacingLeft=29;" value="4: agregarProducto(codigo, cantidad)">
           <mxGeometry relative="1" width="80" as="geometry">
@@ -63,51 +63,51 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-13" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=93;height=26;" value="alt [disponible]" vertex="1">
-          <mxGeometry height="300" width="547" x="197" y="402" as="geometry" />
+          <mxGeometry height="305" width="638" x="197" y="397" as="geometry" />
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-14" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" target="CLIAiuOKjOtazseOK25a-8" value="7: obtenerPrecio()">
+        <mxCell id="CLIAiuOKjOtazseOK25a-14" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="8: obtenerPrecio()">
           <mxGeometry relative="1" width="80" as="geometry">
-            <mxPoint x="395" y="444" as="sourcePoint" />
-            <mxPoint x="634" y="444" as="targetPoint" />
+            <mxPoint x="523.23" y="457" as="sourcePoint" />
+            <mxPoint x="729.5" y="457" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-15" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-8" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="precio">
+        <mxCell id="CLIAiuOKjOtazseOK25a-15" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="precio">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="633" y="466" as="sourcePoint" />
-            <mxPoint x="395" y="466" as="targetPoint" />
+            <mxPoint x="728.27" y="482" as="sourcePoint" />
+            <mxPoint x="522" y="482" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-16" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-25" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=left;entryX=-0.003;entryY=0.034;entryDx=0;entryDy=0;entryPerimeter=0;" target="CLIAiuOKjOtazseOK25a-17" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Helvetica&quot;&gt;8:&amp;nbsp;&lt;span style=&quot;white-space: normal;&quot;&gt;«&lt;/span&gt;create&lt;span style=&quot;white-space: normal;&quot;&gt;»&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 0, 0);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;font style=&quot;&quot;&gt;(cantidad, precioUnitario&lt;/font&gt;)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;">
-          <mxGeometry relative="1" width="80" x="-0.8783" y="5" as="geometry">
-            <mxPoint as="offset" />
-            <mxPoint x="395.85" y="521" as="sourcePoint" />
+        <mxCell id="CLIAiuOKjOtazseOK25a-16" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-5" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=left;entryX=-0.003;entryY=0.034;entryDx=0;entryDy=0;entryPerimeter=0;" target="CLIAiuOKjOtazseOK25a-17" value="&lt;font style=&quot;color: rgb(0, 0, 0);&quot; face=&quot;Helvetica&quot;&gt;9:&amp;nbsp;&lt;span style=&quot;white-space: normal;&quot;&gt;«&lt;/span&gt;create&lt;span style=&quot;white-space: normal;&quot;&gt;»&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); white-space: normal; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;(producto,&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal; color: rgb(0, 0, 0);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;&lt;font style=&quot;&quot;&gt;&amp;nbsp;cantidad, precioUnitario&lt;/font&gt;)&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;">
+          <mxGeometry relative="1" width="80" x="-0.7372" as="geometry">
+            <mxPoint x="1" as="offset" />
+            <mxPoint x="523.6" y="510.91" as="sourcePoint" />
             <mxPoint x="550.76" y="519.95" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-17" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" value="Detalle&lt;div&gt;Venta&lt;/div&gt;" vertex="1">
-          <mxGeometry height="615" width="46" x="561" y="500" as="geometry" />
+          <mxGeometry height="635" width="46" x="660" y="510" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-18" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=0;innerLoopWaypoints=1;" target="CLIAiuOKjOtazseOK25a-17">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="621" y="551.5699999999999" />
-              <mxPoint x="621" y="569.19" />
+              <mxPoint x="723.91" y="556.57" />
+              <mxPoint x="723.91" y="575.94" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-19" connectable="0" parent="CLIAiuOKjOtazseOK25a-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" value="9: calcularSubtotal()" vertex="1">
+        <mxCell id="CLIAiuOKjOtazseOK25a-19" connectable="0" parent="CLIAiuOKjOtazseOK25a-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;" value="10: calcularSubtotal()" vertex="1">
           <mxGeometry relative="1" x="-0.0911" y="1" as="geometry">
             <mxPoint x="53" y="8" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-20" edge="1" parent="1" style="html=1;verticalAlign=middle;endArrow=block;curved=0;rounded=0;labelPosition=center;verticalLabelPosition=middle;align=center;" value="10: calcularTotal()">
+        <mxCell id="CLIAiuOKjOtazseOK25a-20" edge="1" parent="1" style="html=1;verticalAlign=middle;endArrow=block;curved=0;rounded=0;labelPosition=center;verticalLabelPosition=middle;align=center;" value="11: calcularTotal()">
           <mxGeometry relative="1" width="80" x="0.0128" y="14" as="geometry">
             <mxPoint as="offset" />
             <mxPoint x="395.6" y="590" as="sourcePoint" />
             <mxPoint x="520.4" y="590" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-21" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-2" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;" target="CLIAiuOKjOtazseOK25a-25" value="11: mostrarDetalle(total)">
+        <mxCell id="CLIAiuOKjOtazseOK25a-21" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-2" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;" target="CLIAiuOKjOtazseOK25a-25" value="12: mostrarDetalle(total)">
           <mxGeometry relative="1" width="80" as="geometry">
             <Array as="points">
               <mxPoint x="311.06" y="623.47" />
@@ -117,95 +117,97 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-22" parent="1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;dashed=1;" value="" vertex="1">
-          <mxGeometry height="8" width="547" x="197" y="637" as="geometry" />
+          <mxGeometry height="8" width="638" x="197" y="637" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-23" parent="1" style="text;align=center;fontStyle=0;verticalAlign=middle;spacingLeft=3;spacingRight=3;strokeColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" value="[no disponible]" vertex="1">
           <mxGeometry height="26" width="80" x="256" y="637" as="geometry" />
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-24" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-2" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;exitX=0.525;exitY=0.578;exitDx=0;exitDy=0;exitPerimeter=0;" target="CLIAiuOKjOtazseOK25a-25" value="12: mostrarMensaje()">
+        <mxCell id="CLIAiuOKjOtazseOK25a-24" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;exitX=0.525;exitY=0.578;exitDx=0;exitDy=0;exitPerimeter=0;" value="13: mostrarMensaje()">
           <mxGeometry relative="1" width="80" as="geometry">
-            <mxPoint x="230" y="685" as="sourcePoint" />
-            <mxPoint x="322.4" y="685" as="targetPoint" />
+            <mxPoint x="221.005" y="679.0020000000001" as="sourcePoint" />
+            <mxPoint x="397.1300000000002" y="679.0020000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-25" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlControl;" value="Control&lt;div&gt;Venta&lt;/div&gt;" vertex="1">
-          <mxGeometry height="1026" width="58" x="368" y="89" as="geometry" />
+          <mxGeometry height="1066" width="58" x="368" y="89" as="geometry" />
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-26" edge="1" parent="1" style="html=1;verticalAlign=middle;endArrow=block;curved=0;rounded=0;labelPosition=center;verticalLabelPosition=middle;align=center;spacingLeft=48;" target="CLIAiuOKjOtazseOK25a-2" value="13: registrarPago(formaPago, monto)">
-          <mxGeometry relative="1" width="80" x="0.0076" y="9" as="geometry">
+        <mxCell id="CLIAiuOKjOtazseOK25a-26" edge="1" parent="1" style="html=1;verticalAlign=middle;endArrow=block;curved=0;rounded=0;labelPosition=center;verticalLabelPosition=middle;align=center;spacingLeft=48;" target="CLIAiuOKjOtazseOK25a-2" value="14: registrarPago(formaPago, monto)">
+          <mxGeometry relative="1" width="80" x="0.0026" y="12" as="geometry">
             <mxPoint as="offset" />
             <mxPoint x="87" y="732" as="sourcePoint" />
             <mxPoint x="177" y="732" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-27" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-2" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0.467;entryY=0.653;entryDx=0;entryDy=0;entryPerimeter=0;" target="CLIAiuOKjOtazseOK25a-25" value="14: registrarPago(formaPago, monto)">
-          <mxGeometry relative="1" width="80" as="geometry">
-            <mxPoint x="232" y="759.5" as="sourcePoint" />
-            <mxPoint x="361.2" y="759.5" as="targetPoint" />
+        <mxCell id="CLIAiuOKjOtazseOK25a-27" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0.467;entryY=0.653;entryDx=0;entryDy=0;entryPerimeter=0;" value="15: registrarPago(formaPago, monto)">
+          <mxGeometry relative="1" width="80" x="0.008" y="4" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="218.16666666666652" y="753.9980000000002" as="sourcePoint" />
+            <mxPoint x="395.08600000000024" y="753.9980000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-28" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=145;height=25;" value="opt [pago en efectivo]" vertex="1">
-          <mxGeometry height="87" width="291" x="207" y="770" as="geometry" />
+          <mxGeometry height="87" width="337" x="208" y="799" as="geometry" />
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-29" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="CLIAiuOKjOtazseOK25a-5" value="15: calcularVuelto()">
+        <mxCell id="CLIAiuOKjOtazseOK25a-29" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="17: calcularVuelto()">
           <mxGeometry relative="1" width="80" as="geometry">
-            <mxPoint x="397.78" y="815" as="sourcePoint" />
-            <mxPoint x="483" y="815" as="targetPoint" />
+            <mxPoint x="398.78" y="844" as="sourcePoint" />
+            <mxPoint x="522.5000000000002" y="844" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-30" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;exitX=0.536;exitY=0.73;exitDx=0;exitDy=0;exitPerimeter=0;" target="CLIAiuOKjOtazseOK25a-25" value="16: mostrarVuelto(vuelto)">
-          <mxGeometry relative="1" width="80" as="geometry">
-            <mxPoint x="221.19999999999993" y="848.0000000000001" as="sourcePoint" />
-            <mxPoint x="360.5" y="848.0000000000001" as="targetPoint" />
+        <mxCell id="CLIAiuOKjOtazseOK25a-30" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;" target="CLIAiuOKjOtazseOK25a-25" value="18: mostrarVuelto(vuelto)">
+          <mxGeometry relative="1" width="80" x="-0.0017" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="218.95" y="877" as="sourcePoint" />
+            <mxPoint x="392.3000000000002" y="877" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-31" edge="1" parent="1" style="html=1;verticalAlign=middle;endArrow=block;curved=0;rounded=0;labelPosition=center;verticalLabelPosition=middle;align=center;" target="CLIAiuOKjOtazseOK25a-2" value="17: confirmarVenta()">
+        <mxCell id="CLIAiuOKjOtazseOK25a-31" edge="1" parent="1" style="html=1;verticalAlign=middle;endArrow=block;curved=0;rounded=0;labelPosition=center;verticalLabelPosition=middle;align=center;" target="CLIAiuOKjOtazseOK25a-2" value="19: confirmarVenta()">
           <mxGeometry relative="1" width="80" x="0.0009" y="9" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="85" y="885" as="sourcePoint" />
+            <mxPoint x="85.78" y="910.39" as="sourcePoint" />
             <mxPoint x="175" y="885" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-32" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-2" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0.483;entryY=0.809;entryDx=0;entryDy=0;entryPerimeter=0;" target="CLIAiuOKjOtazseOK25a-25" value="18: confirmarVenta()">
+        <mxCell id="CLIAiuOKjOtazseOK25a-32" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0.483;entryY=0.809;entryDx=0;entryDy=0;entryPerimeter=0;" value="20: confirmarVenta()">
           <mxGeometry relative="1" width="80" as="geometry">
-            <mxPoint x="232" y="920" as="sourcePoint" />
-            <mxPoint x="360.89" y="920" as="targetPoint" />
+            <mxPoint x="218.16666666666652" y="932.0040000000002" as="sourcePoint" />
+            <mxPoint x="396.0140000000001" y="932.0040000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-33" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="CLIAiuOKjOtazseOK25a-5" value="19: registrarVenta()">
+        <mxCell id="CLIAiuOKjOtazseOK25a-33" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="CLIAiuOKjOtazseOK25a-5" value="21: registrarVenta()">
           <mxGeometry relative="1" width="80" as="geometry">
-            <mxPoint x="396" y="951" as="sourcePoint" />
+            <mxPoint x="397.52" y="951.28" as="sourcePoint" />
             <mxPoint x="486" y="951" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-34" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;" value="Pedido" vertex="1">
-          <mxGeometry height="141" width="40" x="749" y="976" as="geometry" />
+          <mxGeometry height="169" width="40" x="749" y="976" as="geometry" />
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-35" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-25" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;20:&amp;nbsp;&lt;span style=&quot;white-space: normal;&quot;&gt;«&lt;/span&gt;create&lt;span style=&quot;white-space: normal;&quot;&gt;»&amp;nbsp;registrarPedido()&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;">
-          <mxGeometry relative="1" width="80" x="0.0016" as="geometry">
+        <mxCell id="CLIAiuOKjOtazseOK25a-35" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;font face=&quot;Helvetica&quot;&gt;23:&amp;nbsp;&lt;span style=&quot;white-space: normal;&quot;&gt;«&lt;/span&gt;create&lt;span style=&quot;white-space: normal;&quot;&gt;»&lt;/span&gt;&lt;/font&gt;&lt;/span&gt;">
+          <mxGeometry relative="1" width="80" x="-0.3555" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="382.5" y="999" as="sourcePoint" />
+            <mxPoint x="523.33" y="997.66" as="sourcePoint" />
             <mxPoint x="748.83" y="997.66" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-36" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="21: imprimirTicket(numeroOrden, detalle)">
-          <mxGeometry relative="1" width="80" x="0.0016" as="geometry">
+        <mxCell id="CLIAiuOKjOtazseOK25a-36" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="25: imprimirTicket(numeroOrden, detalle)">
+          <mxGeometry relative="1" width="80" x="-0.1127" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="398" y="1051" as="sourcePoint" />
-            <mxPoint x="869.5" y="1051" as="targetPoint" />
+            <mxPoint x="399" y="1095" as="sourcePoint" />
+            <mxPoint x="870.5" y="1095" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-37" edge="1" parent="1" source="CLIAiuOKjOtazseOK25a-2" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;spacingBottom=2;" target="CLIAiuOKjOtazseOK25a-25" value="22: mostrarConfirmacion(numeroOrden)">
+        <mxCell id="CLIAiuOKjOtazseOK25a-37" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;spacingBottom=2;" value="27: mostrarConfirmacion(numeroOrden)">
           <mxGeometry relative="1" width="80" as="geometry">
             <Array as="points">
-              <mxPoint x="285.4" y="1085.43" />
+              <mxPoint x="284.22999999999996" y="1141" />
             </Array>
-            <mxPoint x="216.4" y="1063.6" as="sourcePoint" />
-            <mxPoint x="323.4" y="1061" as="targetPoint" />
+            <mxPoint x="216.99666666666653" y="1141" as="sourcePoint" />
+            <mxPoint x="395.3300000000002" y="1141" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-38" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="«servicio»&lt;div&gt;ImpresoraCocina&lt;/div&gt;" vertex="1">
-          <mxGeometry height="1029" width="100" x="822" y="96" as="geometry" />
+          <mxGeometry height="1049" width="100" x="822" y="96" as="geometry" />
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-39" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="total">
           <mxGeometry relative="1" as="geometry">
@@ -215,15 +217,59 @@
         </mxCell>
         <mxCell id="CLIAiuOKjOtazseOK25a-40" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="vuelto">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="517.7" y="832" as="sourcePoint" />
-            <mxPoint x="396" y="832" as="targetPoint" />
+            <mxPoint x="518.7" y="861" as="sourcePoint" />
+            <mxPoint x="397" y="861" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CLIAiuOKjOtazseOK25a-41" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=right;verticalLabelPosition=top;align=left;" target="CLIAiuOKjOtazseOK25a-25" value="numeroOrden">
+        <mxCell id="CLIAiuOKjOtazseOK25a-41" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=right;verticalLabelPosition=top;align=left;" value="numeroOrden">
           <mxGeometry relative="1" x="-0.4554" y="-1" as="geometry">
             <mxPoint as="offset" />
-            <mxPoint x="768.7" y="1031" as="sourcePoint" />
-            <mxPoint x="647" y="1031" as="targetPoint" />
+            <mxPoint x="768.7" y="1050" as="sourcePoint" />
+            <mxPoint x="522.67" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIAiuOKjOtazseOK25a-42" parent="1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="«servicio»&lt;div&gt;ImpresoraCaja&lt;/div&gt;" vertex="1">
+          <mxGeometry height="1054" width="100" x="938" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="CLIAiuOKjOtazseOK25a-43" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" value="7: agregarDetalle(producto,cantidad)">
+          <mxGeometry relative="1" width="80" x="0.7939" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="397.14034482758603" y="432" as="sourcePoint" />
+            <mxPoint x="521.86" y="432" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIAiuOKjOtazseOK25a-44" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" target="CLIAiuOKjOtazseOK25a-5" value="16: registrarPago(formaPago, monto)">
+          <mxGeometry relative="1" width="80" x="0.0095" y="5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="397.44" y="791" as="sourcePoint" />
+            <mxPoint x="577" y="791" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIAiuOKjOtazseOK25a-45" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" value="22: generarPedido()">
+          <mxGeometry relative="1" width="80" as="geometry">
+            <mxPoint x="397.19" y="976" as="sourcePoint" />
+            <mxPoint x="521" y="976" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIAiuOKjOtazseOK25a-46" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" target="CLIAiuOKjOtazseOK25a-34" value="24: registrarPedido()">
+          <mxGeometry relative="1" width="80" x="-0.1753" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="526" y="1028" as="sourcePoint" />
+            <mxPoint x="751.5" y="1028" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIAiuOKjOtazseOK25a-47" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;labelPosition=right;verticalLabelPosition=top;align=left;" value="numeroOrden">
+          <mxGeometry relative="1" x="0.5873" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="522" y="1069" as="sourcePoint" />
+            <mxPoint x="396" y="1069" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CLIAiuOKjOtazseOK25a-48" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;labelPosition=left;verticalLabelPosition=top;align=right;" target="CLIAiuOKjOtazseOK25a-42" value="26: imprimirComprobante(numeroOrden)">
+          <mxGeometry relative="1" width="80" x="-0.2704" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="397" y="1118" as="sourcePoint" />
+            <mxPoint x="868.5" y="1118" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>

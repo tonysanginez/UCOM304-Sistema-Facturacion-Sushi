@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Página-1" id="a1nsSTRfHCcyZRUreoPm">
-    <mxGraphModel dx="1717" dy="892" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="858" dy="446" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -33,8 +33,8 @@
             <mxPoint x="490" y="161.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JuNbIzms-I3LHblHPMKP-8" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;" target="JuNbIzms-I3LHblHPMKP-4" value="3: cambiarEstado(&quot;listo&quot;)">
-          <mxGeometry relative="1" width="80" x="-0.427" as="geometry">
+        <mxCell id="JuNbIzms-I3LHblHPMKP-8" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;align=center;labelPosition=left;verticalLabelPosition=top;spacingLeft=0;spacingRight=0;fontFamily=Helvetica;" target="JuNbIzms-I3LHblHPMKP-4" value="3:&amp;nbsp;&lt;span style=&quot;color: rgb(11, 11, 11); font-size: 12px; text-align: start;&quot;&gt;cambiarEstado(LISTO)&lt;/span&gt;">
+          <mxGeometry relative="1" width="80" x="-0.4253" as="geometry">
             <mxPoint as="offset" />
             <mxPoint x="517" y="189.75" as="sourcePoint" />
             <mxPoint x="761" y="189.75" as="targetPoint" />
@@ -53,7 +53,7 @@
             <mxPoint x="760" y="256.75" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="JuNbIzms-I3LHblHPMKP-11" edge="1" parent="1" source="JuNbIzms-I3LHblHPMKP-2" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;" value="5: mostrarEstado(&quot;listo&quot;)">
+        <mxCell id="JuNbIzms-I3LHblHPMKP-11" edge="1" parent="1" source="JuNbIzms-I3LHblHPMKP-2" style="html=1;verticalAlign=bottom;endArrow=none;curved=0;rounded=0;startArrow=block;startFill=1;endFill=0;" value="5: mostrarEstado(LISTO)">
           <mxGeometry relative="1" width="80" x="-0.3576" as="geometry">
             <mxPoint as="offset" />
             <Array as="points">
