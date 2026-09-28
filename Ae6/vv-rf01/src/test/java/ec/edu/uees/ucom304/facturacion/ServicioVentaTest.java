@@ -23,7 +23,12 @@ class ServicioVentaTest {
         // productos de prueba, precios con IVA incluido
         productoRepository.save(new Producto("P01", "Sushi burrito Crabby Crunch", new BigDecimal("11.50"), true));
         productoRepository.save(new Producto("P02", "Sushi burrito Cosmo", new BigDecimal("9.20"), true));
-        productoRepository.save(new Producto("P03", "Poke de atun", new BigDecimal("12.65"), false));
+        productoRepository.save(new Producto("P03", "Poké de atún", new BigDecimal("12.65"), false));
+
+        // ramen disponible pero inactivo (ya no se vende)
+        Producto ramen = new Producto("P04", "Ramen", new BigDecimal("10.35"), true);
+        ramen.setActivo(false);
+        productoRepository.save(ramen);
     }
 
     // CP-01 | RF01 - CA-01
@@ -52,12 +57,16 @@ class ServicioVentaTest {
     void debeRechazarProductoNoDisponible() {
         Venta venta = servicio.iniciarVenta();
 
-        assertThrows(IllegalStateException.class,
+        IllegalStateException error = assertThrows(IllegalStateException.class,
                 () -> servicio.agregarProducto(venta.getCodigoVenta(), "P03", 1));
-        assertTrue(venta.getDetalles().isEmpty());
+
+        assertAll(
+                () -> assertEquals("El producto Poké de atún no está disponible", error.getMessage()),
+                () -> assertTrue(venta.getDetalles().isEmpty())
+        );
     }
 
-    // CP-03 | RF01 - CA-04 (cantidades fuera del limite)
+    // CP-03 | RF01 - CA-04 (cantidades fuera del límite)
     @ParameterizedTest
     @ValueSource(ints = {0, -1})
     void debeRechazarCantidadCeroONegativa(int cantidad) {
@@ -68,7 +77,7 @@ class ServicioVentaTest {
         assertTrue(venta.getDetalles().isEmpty());
     }
 
-    // CP-03 | RF01 - CA-04 (limite valido)
+    // CP-03 | RF01 - CA-04 (límite válido)
     @Test
     void debeAceptarCantidadMinimaDeUno() {
         Venta venta = servicio.iniciarVenta();
@@ -83,9 +92,13 @@ class ServicioVentaTest {
     void debeRechazarConfirmarVentaSinProductos() {
         Venta venta = servicio.iniciarVenta();
 
-        assertThrows(IllegalStateException.class,
+        IllegalStateException error = assertThrows(IllegalStateException.class,
                 () -> servicio.confirmarVenta(venta.getCodigoVenta()));
-        assertEquals(EstadoVenta.EN_PROCESO, venta.getEstado());
+
+        assertAll(
+                () -> assertEquals("Debe seleccionarse al menos un producto", error.getMessage()),
+                () -> assertEquals(EstadoVenta.EN_PROCESO, venta.getEstado())
+        );
     }
 
     // CP-05 | RF01 - CA-01 (precio del momento)
@@ -95,8 +108,8 @@ class ServicioVentaTest {
         Venta venta = servicio.iniciarVenta();
         servicio.agregarProducto(venta.getCodigoVenta(), "P02", 1);
 
-        // Act: se sube el precio en el catalogo antes de confirmar
-        productoRepository.findById("P02").orElseThrow().setPrecio(new BigDecimal("10.35"));
+        // Act: se sube el precio en el catálogo antes de confirmar
+        productoRepository.findById("P02").get().setPrecio(new BigDecimal("10.35"));
         Venta registrada = servicio.confirmarVenta(venta.getCodigoVenta());
 
         // Assert
@@ -104,5 +117,54 @@ class ServicioVentaTest {
                 () -> assertEquals(new BigDecimal("9.20"), registrada.getDetalles().get(0).getPrecioUnitario()),
                 () -> assertEquals(new BigDecimal("9.20"), registrada.calcularTotal())
         );
+    }
+
+    // CP-06 | RF01 - CA-05 (estado: venta ya registrada)
+    @Test
+    void debeRechazarAgregarProductoAVentaRegistrada() {
+        Venta venta = servicio.iniciarVenta();
+        servicio.agregarProducto(venta.getCodigoVenta(), "P01", 1);
+        servicio.confirmarVenta(venta.getCodigoVenta());
+
+        assertThrows(IllegalStateException.class,
+                () -> servicio.agregarProducto(venta.getCodigoVenta(), "P02", 1));
+        assertAll(
+                () -> assertEquals(1, venta.getDetalles().size()),
+                () -> assertEquals(new BigDecimal("11.50"), venta.calcularTotal())
+        );
+    }
+
+    // CP-06 | RF01 - CA-05 (estado: confirmar dos veces)
+    @Test
+    void debeRechazarConfirmarDosVecesLaMismaVenta() {
+        Venta venta = servicio.iniciarVenta();
+        servicio.agregarProducto(venta.getCodigoVenta(), "P01", 1);
+        servicio.confirmarVenta(venta.getCodigoVenta());
+
+        assertThrows(IllegalStateException.class,
+                () -> servicio.confirmarVenta(venta.getCodigoVenta()));
+        assertEquals(EstadoVenta.REGISTRADA, venta.getEstado());
+    }
+
+    // CP-07 | RF01 - CA-02 (producto inactivo)
+    @Test
+    void debeRechazarProductoInactivo() {
+        Venta venta = servicio.iniciarVenta();
+
+        assertThrows(IllegalStateException.class,
+                () -> servicio.agregarProducto(venta.getCodigoVenta(), "P04", 1));
+        assertTrue(venta.getDetalles().isEmpty());
+    }
+
+    // CP-08 | RF01 - CA-01 (DEF-02: detalles protegidos)
+    @Test
+    void debeImpedirModificarLosDetallesDesdeFueraDeLaVenta() {
+        Venta venta = servicio.iniciarVenta();
+        servicio.agregarProducto(venta.getCodigoVenta(), "P01", 1);
+        Producto cosmo = productoRepository.findById("P02").get();
+
+        assertThrows(UnsupportedOperationException.class,
+                () -> venta.getDetalles().add(new DetalleVenta(cosmo, 1, cosmo.getPrecio())));
+        assertEquals(new BigDecimal("11.50"), venta.calcularTotal());
     }
 }

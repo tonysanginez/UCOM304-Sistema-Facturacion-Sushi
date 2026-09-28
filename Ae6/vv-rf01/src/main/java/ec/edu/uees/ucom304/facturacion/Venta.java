@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Getter
@@ -21,6 +22,11 @@ public class Venta {
         this.codigoVenta = codigoVenta;
         this.fechaVenta = LocalDateTime.now();
         this.estado = EstadoVenta.EN_PROCESO;
+    }
+
+    // solo lectura, los detalles se agregan con agregarDetalle (DEF-02)
+    public List<DetalleVenta> getDetalles() {
+        return Collections.unmodifiableList(detalles);
     }
 
     public void agregarDetalle(Producto producto, int cantidad) {
