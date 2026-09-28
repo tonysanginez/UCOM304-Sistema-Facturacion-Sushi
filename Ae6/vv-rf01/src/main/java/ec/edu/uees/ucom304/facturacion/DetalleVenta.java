@@ -17,6 +17,6 @@ public class DetalleVenta {
     }
 
     public BigDecimal calcularSubtotal() {
-        return producto.obtenerPrecio().multiply(BigDecimal.valueOf(cantidad));
+        return precioUnitario.multiply(BigDecimal.valueOf(cantidad));
     }
 }
