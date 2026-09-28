@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.uees.ucom304.facturacion.ServicioVentaTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.889 s -- in ec.edu.uees.ucom304.facturacion.ServicioVentaTest
